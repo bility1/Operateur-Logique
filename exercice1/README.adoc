@@ -1,0 +1,59 @@
+# Recette de cuisine
+
+On désire représenter des Mets plus ou moins compliqués. Il y a tout
+d’abord des mets simples (Sucre, Sel, Poire, Pomme, Framboise, Veau,
+Bœuf, Chocolat, Carotte, Haricot _vert) mais aussi des mets composés (un
+bœuf carotte par exemple, ou une poire Belle Hélène) qui sont composés
+de plusieurs autres mets. Tous les mets possèdent une description ainsi
+que diverses informations : estSucre(), estSale(), le nombreDeCalories()
+et estDietetique() (si le nombre de kcalories inférieur à 200).
+
+
+Apports en calories pour 100g :
+
+    - Sucre : 387 calories
+    - Framboises : 53 calories
+    - Carottes : 40 calories
+    - Poire : 57 calories
+    - Veau : 172 calories (au grill)
+    - Boeuf : 270 calories
+    - Chocolat : 546 calories
+    - Haricots verts : 31 calories
+
+
+
+
+Un met est sucré si au moins un des éléments est sucré, salé si un au
+moins est salé.
+
+. Question 1 : Pour les mets composés, la description comporte un nom suivit de la
+liste des « ingrédients ». Par exemple, « Poire Belle Hélène (Poire,
+Chocolat) ».
+
+..  Proposez un diagramme de classes permettant de donner une
+représentation évolutive des mets simples et composés et définissez en Java les différentes classes.
+..  Quel(s) patron(s) de conception avez-vous utilisé ? Justifiez.
+..  Ecrire un programme (simplement le Main) qui créé les mets « Poire
+Belle Hélène » puis « Poire Belle Hélène avec sa décoration de
+framboise » et les affiche à l’écran.
+
+. Question 2 : On désire maintenant créer une nouvelle sorte de Mets dits "allégés". On
+ne veut pas changer toutes les classes existantes (mais en rajouter de
+nouvelles), de manière à avoir par exemple du Boeuf allégé, Carotte
+allégée (il y en a moins dans l’assiette !), etc... Tous les mets
+allégés sont évidemment « diététiques ».
+
+..  Quel(s) patron(s) de conception conviendrai(en)t pour représenter
+les mets allégés ?
+..  Modifiez votre diagramme de classes précédent pour représenter les
+mets allégés et modifiez/ajoutez les classes nécessaires en Java.
+..  Ecrire un programme (simplement le Main) qui créé un bœuf carotte
+allégé.
+
+. Question 3 : Vous proposez vos mets dans votre restaurant. Pour simplifier la carte,
+tous les mets sont proposés en version normale ou en version allégé.
+
+..  Quel(s) patron(s) de conception peuvent être utilisés pour définir
+la classe Cuisinier qui va créer les mêmes mets en version normale ou
+allégé suivant le choix du client ?
+..  Ecrire le diagramme de classes correspondant ainsi que le code.

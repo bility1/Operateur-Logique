@@ -1,0 +1,19 @@
+private Logique filsG;
+    private Logique filsD;
+    private String inconnu;
+
+    Logique(String inconnu ,Logique filsD,Logique filsG){
+        this.inconnu = inconnu;
+        this.filsD = filsD;
+        this.filsG = filsG;
+
+    }
+    static int taille (Logique a){
+        if (a==null) {
+            return 0;
+        }else{
+            return 1 + taille(a.filsD) +taille(a.filsG);
+            }
+        }
+    static Logique nouvelArbre(String inconnu, Logique filsG, Logique filsD) {
+        return new Logique (inconnu, filsD, filsG);}
